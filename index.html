@@ -80,27 +80,20 @@
 	</head>
 
 	<body onload="init()">
-<input type="file" id="file-selector">
-		
+		<input type="file" id="file-selector">
 		<div id="instructions">
-			<div id="title">Shifting</div>
-			<div class="subtitles">
-				
-			</div>
-			<div class="subtitles" style="border-top: solid #666 1px;">				
-				<span>Slide</span> columns to select choices. <br><br>
-				<span>Doubleclick</span> a tile to jump to a scene. <br><br>
-				<span>Refresh</span> to resize the timeline.
-			</div>				
-				
-				
-			</div>
+			<div id="title">Timeline Player</div>
+			<label for="file-selector" class="fileSelector">Choose a file</label>
+			<span style="border-left: solid #eee 2px;">Doubleclick to navigate between tiles.</span>
 		</div>
 		
 		<div class="mediaContainer">
-			<video id="video"></video>
+			<video controls class="media" id="video"></video>
+			<img class="media" id="picture"></img>
 		</div>
-		
+
+
+
 		<canvas id="canvas"></canvas>
 	</body>
 
